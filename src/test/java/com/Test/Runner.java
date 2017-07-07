@@ -11,7 +11,9 @@ public class Runner {
 	public static void LaunchBrowser()
 	{
 		WebDriver driver=new FirefoxDriver();
-		driver.navigate().to("www.irctc.co.in");
+		
+		driver.get("https://www.irctc.co.in");
+		//driver.navigate().to("www.irctc.co.in");
 		
 		driver.manage().window().maximize();
 		
